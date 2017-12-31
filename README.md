@@ -1,11 +1,12 @@
 # Vera Endnode A README
 
-Wall mounted End node for the Vera using a Raspberry Pi Zero W, Adafruit Arduino RGB 16x2 LCD shield, and a splash of python. 
-#Displays Date time, weather, and the current mode.
+Wall mounted End node for the Vera using a Raspberry Pi Zero W, Adafruit Arduino RGB 16x2 LCD shield, and a splash of python. Selectable Vera modes, displays the date time, weather, and the current mode when changed with an appropriate colour.
 
-This is a display only for around the flat. I used physical pins 4(5V) 6 (GND) 3(Data SDA) 6(Clock SCL) on the #raspberry pi. Make sure you run raspi-config to #change the hostname (for tracking multiple nodes), password, and #enable I2C used by the MCP chip. 
+I was fed up using the app, and wanted to do something that gave me a bit more control. Using the 5 buttons on the shield, then printed a case to mount it in. 
 
-After building a node I usually scp (scp -r /home/pi/lcd 192.168.4.(newnode):/home/pi/) the runtime directory to a #new node from one of the already running nodes and run all of the install steps.
+I used physical pins 4(5V) 6 (GND) 3(Data SDA) 6(Clock SCL) on the #raspberry pi. Make sure you run raspi-config to #change the hostname (for tracking multiple nodes), password, and #enable I2C used by the MCP chip. 
+
+After building one type of node, to build a second of the same I usually scp (scp -r /home/pi/lcd 192.168.4.(newnode):/home/pi/) the runtime directory to a new node from one of the already running nodes and run all of the install steps. I know I am lazy.
 
 Endnode A/B
 
