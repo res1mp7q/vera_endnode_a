@@ -2,6 +2,8 @@
 
 Wall mounted End node for the Vera using a Raspberry Pi Zero W, Adafruit Arduino RGB 16x2 LCD shield, and a splash of python. Selectable Vera modes, displays the date time, weather, and the current mode when changed with an appropriate colour.
 
+![alt text](Node_a_nominal.jpg "Press me buttons")
+
 I was fed up using the app, and wanted to do something that gave me a bit more control about the home. After a short rummage I found an adafruit shield (for arduino of course), and after a bit of tinkering found that its really important to use appropriate code for the chip you are using (who knew?). The node uses the 5 buttons on the shield, matched with the vera modes and colours. To quiet the wifey I printed a case to mount it flat to the wall making it more palletable to look at. 
 
 I used physical pins 4(5V) 6 (GND) 3(Data SDA) 6(Clock SCL) on the raspberry pi. Make sure you run raspi-config to change the hostname (for tracking multiple nodes), password, and enable I2C used by the MCP chip. 
